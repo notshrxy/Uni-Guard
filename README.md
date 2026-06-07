@@ -2,6 +2,8 @@
 
 > **Scan, Detect, and Stay Compliant**
 
+**Developed with @Akash-GHB**
+
 UniGuard is an enterprise-ready, premium and a powered security desktop application that helps automate student uniform compliance checks and biometric attendance logging in real-time. Uniguard is a Compliance System specific to Sathyabama institute of Science and Technology, Chennai.
 
 **I’ve built an AI-powered compliance tool that automates uniform auditing and attendance tracking across campus entry gates. The tool automatically detects dress code compliance (like uniform shirts, ID badges, correct shoes), verifies student identities via facial recognition, and logs attendance details.
