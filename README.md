@@ -10,12 +10,25 @@ My tool becomes a smart “gate sentinel” that scans, verifies, logs, and crea
 
 **Unlike traditional gate checks that rely on slow, manual inspections, UniGuard is built around real-time automation, biometric validation, and frictionless compliance**.
 
+
 ---
 
-## Navigating the Interface
+## Problem vs Objective
+
+<img width="1530" height="665" alt="Image" src="https://github.com/user-attachments/assets/31f04a93-cd82-4f45-b683-e6657d122e92" />
 
 
+---
 
+## Uni-Guard Interface
+
+<img width="1600" height="999" alt="Image" src="https://github.com/user-attachments/assets/702f131b-dec2-48c6-bef3-ba15b5846d6c" />
+
+<img width="1600" height="999" alt="Image" src="https://github.com/user-attachments/assets/6c3dd534-4e65-4700-92a2-7d57cbe083f5" />
+
+<img width="1600" height="999" alt="Image" src="https://github.com/user-attachments/assets/c7548bf9-0915-4acd-a1e8-b5c9e37b92fc" />
+
+<img width="1600" height="999" alt="Image" src="https://github.com/user-attachments/assets/85bb5c13-c353-44b3-b859-212c3c490c1c" />
 
 ---
 
@@ -57,6 +70,13 @@ Think of it as a smart gate sentinel rather than a passive camera recorder.
 
 ---
 
+## Flow Diagram
+
+<img width="1512" height="572" alt="Image" src="https://github.com/user-attachments/assets/70d071a4-7cb7-4fd2-8970-b5a750c15ece" />
+
+
+---
+
 ## 🧠 Philosophy (Why SaveStack?)
 
 * ❌ Not a passive CCTV DVR recorder
@@ -71,6 +91,20 @@ UniGuard helps you maintain standards at the gate — without slowing down entry
 ## How does UNIGUARD work?
 
 
+**Face Embedding is analyzed - System identifies student as "Shreyas S" (Me) - Scans my body for ID Card - Finds ID**
+
+
+<img width="3200" height="1968" alt="Image" src="https://github.com/user-attachments/assets/46acc16f-d64b-4d3a-a90e-69be09876e3d" />
+
+
+**Marks Student (Me) as Present for the Day**
+
+
+<img width="1071" height="301" alt="Image" src="https://github.com/user-attachments/assets/6d162a67-b664-42e6-a6c8-73d50e608d06" />
+
+**Changes to SQLite Database reflect inside Uniguard UI**
+
+<img width="1600" height="539" alt="Image" src="https://github.com/user-attachments/assets/5b5813d2-4142-4d40-bc64-88fe700036d5" />
 
 ---
 
