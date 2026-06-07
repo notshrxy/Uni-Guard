@@ -1,0 +1,27 @@
+# Python cached files
+__pycache__/
+*.pyc
+
+# Local databases and biometrics
+face_db/uniguard.db
+face_db/embeddings.npz
+face_db/reference_faces/
+uniguard.db
+
+# Large Model weights
+*.pt
+*.onnx
+
+# Student raw photos
+student_photos/
+dataset/
+labels/
+
+# Local logs and user-specific config
+*.log
+admin_config.json
+Analytics_Report.png
+
+# Temp runs/Snapshots
+runs/
+snapshots/
