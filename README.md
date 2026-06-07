@@ -1,159 +1,145 @@
-# SaveStack - CONTENT HUB FOR ALL🚀
+# UNIGUARD - Uniform Compliance System
 
-> **Save it. Sort it. Actually use it.**
+> **Scan, Detect, and Stay Compliant**
 
-SaveStack is a lightweight, privacy-first web app that helps users save important links, notes, and resources in one place — and gently nudges them to come back before their saves disappear.
+UniGuard is an enterprise-ready, premium and a powered security desktop application that helps automate student uniform compliance checks and biometric attendance logging in real-time. Uniguard is a Compliance System specific to Sathyabama institute of Science and Technology, Chennai.
 
-**I’ve built an AI-powered tool that organizes all the educational content students save across apps like Instagram, WhatsApp, YouTube, and LinkedIn.
-The tool automatically categorizes posts by domain (like full-stack, UI/UX, game dev), summarizes them, and marks content as “viewed” or “done.”
-It solves a real problem: students save hundreds of reels and posts but forget about them within days. 
-My tool becomes a smart “content brain” that filters, reminds, sorts, and creates a personalized learning playlist.**
+**I’ve built an AI-powered compliance tool that automates uniform auditing and attendance tracking across campus entry gates. The tool automatically detects dress code compliance (like uniform shirts, ID badges, correct shoes), verifies student identities via facial recognition, and logs attendance details.
+It solves a real problem: Gatekeepers manually inspect thousands of students daily, causing entry bottlenecks, human oversight, and inconsistent tracking.
+My tool becomes a smart “gate sentinel” that scans, verifies, logs, and creates a real-time, hands-free compliance audit trail.**
 
-Unlike traditional bookmark managers that become digital graveyards, **SaveStack is built around recall, revisits, and intentional retention**.
+**Unlike traditional gate checks that rely on slow, manual inspections, UniGuard is built around real-time automation, biometric validation, and frictionless compliance**.
 
 ---
 
 ## Navigating the Interface
 
-![Image](https://github.com/user-attachments/assets/a710a3b5-7110-4c07-81d1-c22161337496)
 
-![Image](https://github.com/user-attachments/assets/1270050b-110b-459e-9d1d-ddf7e9003fcb)
 
 
 ---
 
 ## ✨ Core Idea
 
-Most people save things with good intentions… and never return.
+Most gate security processes rely on slow, manual eyesight checks… and inevitably miss infractions.
 
-SaveStack flips this behavior by:
+UniGuard flips this behavior by:
 
-* Encouraging **periodic revisits**
-* Keeping storage **lean and intentional**
-* Using **reminders instead of hoarding**
-
-Think of it as a **temporary brain cache** rather than infinite storage.
+* Automating **attire compliance checks**
+* Matching student identities using **zero-friction biometrics**
+* Providing instant, **digital audit logs**
+  
+Think of it as a smart gate sentinel rather than a passive camera recorder.
 
 ---
 
 ## 🔑 Key Features
 
-### 📌 Save Anything
+### Attire Verification
 
-* Save links, notes, and references instantly
-* Minimal friction, fast UI
+* Scan uniforms, ID badges, and footwear automatically using custom YOLO detectors
+* Configurable compliance target tags (e.g., batch-specific tags)
 
-### ⏳ Time-Aware Storage
+### Instant Biometric Recognition
 
-* Saves are **auto-deleted after 30 days** (Pending)
-* Keeps IndexedDB storage clean and intentional (Enables Local Storage)
+* Matches passing faces with database profiles on the fly via InsightFace
+* Quick registration via a simple profile image drop (student_photos/)
 
-### 🔔 Smart Email Reminders (Pending)
+### Live Database Explorer
 
-* Reminder emails sent every **15–30 days** 
-* Notifies users before their saves expire
+* Track daily compliance logs and weekly matrices in real-time 
+* Interactive cell edits, self-correction logging, and CSV exports
 
-### 🔐 Auth & Profiles
+### Privacy First by Design
 
-* Secure authentication powered by **Supabase Auth**
-* User profiles with activity tracking
-
-### ⚡ Lightweight by Design
-
-* No forced subscriptions
-* No dark patterns
-* No infinite clutter
+* Processes all frames locally on-edge without uploading biometric data to external servers
+* Cached student database profiles for immediate connection disposal
 
 ---
 
 ## 🧠 Philosophy (Why SaveStack?)
 
-* ❌ Not another bookmark dump
-* ❌ Not a bloated second brain
-* ✅ A **focused recall tool**
-* ✅ A **learning companion**
+* ❌ Not a passive CCTV DVR recorder
+* ❌ Not a slow, bottlenecked manual paper register
+* ✅ A **smart compliance monitor**
+* ✅ A **hands-free security assistant**
 
-SaveStack helps you *remember what you saved* — or lets it go.
-
----
-
-## How do 'Streaks' work?
-
-![Image](https://github.com/user-attachments/assets/f7027437-8f8e-468d-a6f9-e50919828617)
+UniGuard helps you maintain standards at the gate — without slowing down entry.
 
 ---
 
-## StashCast - For people on the go, all the time.
+## How does UNIGUARD work?
 
-![Image](https://github.com/user-attachments/assets/5717c51b-d0c2-4438-afd4-64ad49cb6cdf)
+
 
 ---
 
 ## 🛠 Tech Stack
 
-### Frontend
+### Vision and Core
 
-* React
-* Typescript
-* Tailwind CSS
-* HTML/CSS
-* IndexedDB for local-first storage
+* **Object Detection**: YOLOv8 (Ultralytics PyTorch / ONNX)
+* **Face Recognition**: InsightFace (ONNX Runtime / CPU & GPU Execution)
+* **Image Processing**: OpenCV (Multithreaded Frame Decoders)
 
-### Backend
+### UI and Presentation
 
-* **Supabase**
+* **Application Framework**: PyQt6 (Python Qt6 bindings)
+* **Interactive Charts**: PyQtGraph (Hardware-accelerated analytics plotting)
+* **System Resource Monitoring**: Psutil
 
-  * Auth
-  * Postgres database
-  * Edge Functions
+### Storage
 
-### Email & Automation (Yet to Implement)
-
-* Supabase Edge Functions (Deno)
-* External Cron (GitHub / cron-job.org)
-* Email provider (e.g. Resend)
+* **Local Database**: SQLite3 (Optimized with WITHOUT ROWID storage tables)
+* **Reference Cache**: NumPy (embeddings.npz vector matrix storage))
 
 ---
 
 ## 🧩 Architecture Overview
 
 ```text
-User → SaveStack Web App
-     → IndexedDB (local saves)
-     → Supabase Auth & Profiles
-     → Edge Function (email reminders)
-     → Email Service → User Inbox
+Camera Stream (Webcam/IP) → OpenCV Frame Grabber
+                          → YOLOv8 (Dress Code Compliance Checks)
+                          → InsightFace (Face Embedding Matching)
+                          → Database Manager (SQLite transactional log)
+                          → PyQt6 Security Dashboard UI (Analytics / Tables)
 ```
 
 ---
 
-## 🔄 Reminder System Logic
+## 🔄 Attendance and Verification Logic
 
-1. User saves content
-2. Save timestamp is recorded
-3. Cron triggers Edge Function periodically
-4. Inactive users are queried
-5. Reminder email is sent (Once every 15/30 days - If found inactive)
-6. After 30 days → saves are cleared (Pending)
+1. Video frame is captured from the input stream.
+2. YOLOv8 detects the presence of uniforms, ID badges, and footwear compliance tags.
+3. InsightFace extracts facial embeddings and compares them with registered references.
+4. If a student is identified, their attendance is logged:
+5. Status is marked as PRESENT if all compliance tags are satisfied.
+6. Status is marked as VIOLATION with details if any required item is missing.
+7. Self-Correction Logic: Upgrades status from VIOLATION to PRESENT if the student corrects their attire and scans again on the same day.
+8. Local logs are synchronized with the weekly attendance metrics grid.
 
 ---
 
 ## 🧪 Project Status
 
-* ✅ Core save & recall flow
-* ✅ Supabase auth integration
-* ✅ Email reminder system
-* 🚧 UX polish
-* 🚧 Analytics & insights
+* ✅ Real-time YOLO uniform/shoes/badge detection
+* ✅ InsightFace biometric extraction and auto-embedding generation
+* ✅ SQLite Database schema auto-migrations (WITHOUT ROWID)
+* ✅ Dynamic self-correction and priority logging logic
+* 🚧 Multi-camera RTSP streaming support
+* 🚧 Cloud synchronization engine (Central PostgreSQL database backend
+* 🚧 On field deployment post Model Optimization and Hardware Optimization
+* 🚧 Exterprise-Grade security with RBAC (Role Based Access Control)
+* 🚧 Notification Pipelines (Automated)
 
 ---
 
 ## 🧭 Future Ideas
 
-* Daily / weekly recap emails
-* "Revive or Delete" actions
-* Modelling a Browser extension
-* Mobile PWA enhancements
+* Dynamic email/SMS notification alerts (Twilio / Resend integration)
+* Integration with popular Student Information Systems (SIS)
+* Edge device deployment templates (e.g., Nvidia Jetson / Intel OpenVINO)
+* Active Directory/SSO integration for admin panel controls
 
 ---
 
@@ -170,7 +156,7 @@ Built with curiosity, frustration with bookmarks, and a love for clean systems.
 
 MIT License
 
-Copyright (c) 2025 Shreyas S
+Copyright (c) 2026 Shreyas S
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -192,4 +178,4 @@ SOFTWARE.
 
 ---
 
-> *Save intentionally. Revisit consciously. Let go freely.*
+> *Detect infractions. Verify identities. Automate gatekeeping.*
